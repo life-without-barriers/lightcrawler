@@ -68,6 +68,7 @@ function runLighthouse (url, configPath, callback) {
     '--disable-cpu-throttling',
     '--disable-network-throttling',
     '--chrome-flags=--headless --disable-gpu',
+    '--extra-headers=./lighthouse-headers.json',
     `--config-path=${configPath}`
   ]
 
